@@ -4,3 +4,9 @@ export interface PaginateQuery<T> {
   next: string | null;
   previous: string | null;
 }
+
+export interface Meta {
+  current_page: number;
+  next_page: number;
+  per_page: number;
+}
