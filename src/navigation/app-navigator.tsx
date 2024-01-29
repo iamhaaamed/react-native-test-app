@@ -1,9 +1,9 @@
+import {useAuth} from '@/core';
+import {Home} from '@/screens';
 import {useNavigation} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import * as React from 'react';
 import {Pressable, Text, TouchableOpacity, View} from 'react-native';
-import {Home} from '../screens';
-import {useAuth} from '../core';
 
 export type AppStackParamList = {
   Home: undefined;

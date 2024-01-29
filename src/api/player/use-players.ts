@@ -1,9 +1,8 @@
 import type {AxiosError} from 'axios';
 import {createInfiniteQuery} from 'react-query-kit';
 
-import {client} from '../common';
 import type {Player} from './types';
-import {Meta} from '..';
+import {Meta, client} from '..';
 
 type Response = {
   data: Player[];

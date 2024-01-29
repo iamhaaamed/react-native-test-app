@@ -6,7 +6,7 @@ import {
   GestureResponderEvent,
 } from 'react-native';
 import React from 'react';
-import {Player} from '../../api';
+import {Player} from '@/api';
 
 export default function PlayerCard({
   player,

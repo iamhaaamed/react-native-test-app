@@ -6,7 +6,7 @@ import {AuthNavigator} from './auth-navigator';
 
 import {NavigationContainer} from './navigation-container';
 import {AppNavigator} from './app-navigator';
-import {useAuth} from '../core';
+import {useAuth} from '@/core';
 const Stack = createNativeStackNavigator();
 
 export const Root = () => {

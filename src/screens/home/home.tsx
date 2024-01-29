@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
 import {View, FlatList, ActivityIndicator} from 'react-native';
-import {Player, usePlayers} from '../../api';
+
 import PlayerModal from './player-modal';
+
+import {Player, usePlayers} from '@/api';
 import PlayerCard from './player-card';
 
 export const Home = () => {

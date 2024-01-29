@@ -13,18 +13,12 @@ import {
   Platform,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import {useAuth} from '../../core';
-import {useSingIn} from '../../api';
+import {useAuth} from '@/core';
+import {useSingIn} from '@/api';
 
 const schema = z.object({
-  username: z.string({
-    required_error: 'Username is required',
-  }),
-  password: z
-    .string({
-      required_error: 'Password is required',
-    })
-    .min(6, 'Password must be at least 6 characters'),
+  username: z.string().min(1, {message: 'Username is required'}),
+  password: z.string().min(6, 'Password must be at least 6 characters'),
 });
 
 export type FormType = z.infer<typeof schema>;

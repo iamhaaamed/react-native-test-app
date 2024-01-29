@@ -1,3 +1,4 @@
+import {Player} from '@/api';
 import React from 'react';
 import {
   View,
@@ -7,7 +8,6 @@ import {
   Modal,
   NativeSyntheticEvent,
 } from 'react-native';
-import {Player} from '../../api';
 
 export default function PlayerModal({
   visible,
