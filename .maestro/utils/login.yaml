@@ -1,0 +1,15 @@
+appId: ${APP_ID}
+env:
+  USERNAME: "kminchelle"
+  PASSWORD: "0lelplR"
+tags:
+  - util
+---
+- tapOn: "Username"
+- inputText: ${USERNAME}
+- runFlow: ../utils/hide-keyboard.yaml
+- tapOn: "Password"
+- inputText: ${PASSWORD}
+- runFlow: ../utils/hide-keyboard.yaml
+- tapOn: "LOGIN"
+- assertVisible: "Sign Out"
